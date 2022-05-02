@@ -47,4 +47,39 @@
       <masked>false</masked>
       <name>columnname</name>
    </variable>
+   <variable>
+      <defaultValue>''</defaultValue>
+      <description></description>
+      <id>6295bd81-6311-434c-ba4f-e8d757760d4c</id>
+      <masked>false</masked>
+      <name>UserChoice</name>
+   </variable>
+   <variable>
+      <defaultValue>'Data1'</defaultValue>
+      <description></description>
+      <id>9cb52d21-3c91-4a3a-8016-8a0c82f10c21</id>
+      <masked>false</masked>
+      <name>datatablevalue</name>
+   </variable>
+   <variable>
+      <defaultValue>'graph6'</defaultValue>
+      <description></description>
+      <id>6b73a41d-2526-429b-ac8e-a385889e4aff</id>
+      <masked>false</masked>
+      <name>graphlocationkdb</name>
+   </variable>
+   <variable>
+      <defaultValue>'rgraph2'</defaultValue>
+      <description></description>
+      <id>7c919eb4-c14a-44d2-a337-6d268c76502c</id>
+      <masked>false</masked>
+      <name>runtimegraph</name>
+   </variable>
+   <variable>
+      <defaultValue>'rgraph6'</defaultValue>
+      <description></description>
+      <id>60016c00-33c4-4b06-8e0d-9c4a233cbfa8</id>
+      <masked>false</masked>
+      <name>runtimegraphkdb</name>
+   </variable>
 </TestCaseEntity>

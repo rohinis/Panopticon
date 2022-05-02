@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TestCaseEntity>
+   <description></description>
+   <name>TC73307-MQTTConnector</name>
+   <tag></tag>
+   <comment></comment>
+   <testCaseGuid>dd95c703-f417-4632-8374-82c9893e6279</testCaseGuid>
+   <variable>
+      <defaultValue>''</defaultValue>
+      <description></description>
+      <id>f31ac4df-0c6f-4b70-8ab6-408c81d6d255</id>
+      <masked>false</masked>
+      <name>TestCaseName</name>
+   </variable>
+   <variable>
+      <defaultValue>'workbook89'</defaultValue>
+      <description></description>
+      <id>3ab92e4f-c100-4e45-ac22-a333cb92bb2d</id>
+      <masked>false</masked>
+      <name>workbookname</name>
+   </variable>
+</TestCaseEntity>

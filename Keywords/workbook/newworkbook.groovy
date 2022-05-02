@@ -36,7 +36,7 @@ public class newworkbook {
 
 		WebUI.delay(2)
 		WebUI.click(findTestObject('Object Repository/Create_Button'))
-		extentTest.log(LogStatus.PASS, 'Workbbok created wih the name '+ workbookname)
+		extentTest.log(LogStatus.PASS, 'Workbook created wih the name '+ workbookname)
 
 		WebUI.delay(2)
 	}

@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <WebElementEntity>
    <description></description>
-   <name>Refresh_button</name>
+   <name>Refresh_Button</name>
    <tag></tag>
    <elementGuidId>889b21a6-9e0b-49dc-ada4-ab50a221be88</elementGuidId>
    <selectorCollection>

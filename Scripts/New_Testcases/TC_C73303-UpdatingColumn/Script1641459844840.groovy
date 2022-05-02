@@ -89,7 +89,7 @@ TestObject dropobject = WebUI.modifyObjectProperty(findTestObject('Object Reposi
 WebUI.dragAndDropToObject(draggableobject, dropobject)
 
 TestObject draggableobject1 = WebUI.modifyObjectProperty(findTestObject('Object Repository/General_Button'), 'text', 'equals', 'Industry', true)
-TestObject dropobject1 = WebUI.modifyObjectProperty(findTestObject('Object Repository/General_Button'), 'text', 'equals', 'Breakdown', true)
+TestObject dropobject1 = WebUI.modifyObjectProperty(findTestObject('Object Repository/General_Button'), 'text', 'equals', 'Items', true)
 
 WebUI.dragAndDropToObject(draggableobject1, dropobject1)
 
@@ -102,7 +102,12 @@ extentTest.log(LogStatus.PASS, 'Click on the Save button')
 CustomKeywords.'expandgraph.inputgraph.resizegraph'()
 extentTest.log(LogStatus.PASS, 'Expand the sliders to view the full graph')
 
-CustomKeywords.'image_Comparision.Compare_Screenshots.compare_graphs'(graphid,extentTest,graphlocation)
+result=CustomKeywords.'image_Comparision.Compare_Screenshots.compare_graphs'(graphid,extentTest,graphlocation,runtimegraph)
+if (result) {
+	extentTest.log(LogStatus.PASS, ('Verified :: ' + TestCaseName) + ' :: Sucessfully')
+} else {
+	extentTest.log(LogStatus.FAIL, TestCaseName + ' :: failed')
+}
 }
 
 catch (StepErrorException e) {

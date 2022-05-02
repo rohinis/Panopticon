@@ -34,7 +34,7 @@ public class ForLogin {
 
 		WebUI.setText(findTestObject('Object Repository/Password_Field'),GlobalVariable.G_Password )
 
-		extentTest.log(LogStatus.PASS, 'Entered Username and Password  - '+GlobalVariable.G_userName  + GlobalVariable.G_Password)
+		extentTest.log(LogStatus.PASS, 'Entered Username and Password  - '+GlobalVariable.G_userName +"    " + GlobalVariable.G_Password)
 
 
 		WebUI.click(findTestObject('Object Repository/Login_Button'))

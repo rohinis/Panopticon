@@ -21,7 +21,7 @@
    </GlobalVariableEntity>
    <GlobalVariableEntity>
       <description></description>
-      <initValue>'Firefox'</initValue>
+      <initValue>'Chrome'</initValue>
       <name>G_Browser</name>
    </GlobalVariableEntity>
    <GlobalVariableEntity>
@@ -46,7 +46,7 @@
    </GlobalVariableEntity>
    <GlobalVariableEntity>
       <description></description>
-      <initValue>'C:\\KatalonDownloads'</initValue>
+      <initValue>'C:\\katalonDownloads'</initValue>
       <name>G_DownloadFolder</name>
    </GlobalVariableEntity>
    <GlobalVariableEntity>

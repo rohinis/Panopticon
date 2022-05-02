@@ -7,11 +7,11 @@
    <selectorCollection>
       <entry>
          <key>BASIC</key>
-         <value>//span[contains(@class, 'header-title') and (contains(text(), 'Calculated') or contains(., 'Calculated'))]</value>
+         <value>//span[(text() = 'Calculated Columns' or . = 'Calculated Columns')]</value>
       </entry>
       <entry>
          <key>XPATH</key>
-         <value></value>
+         <value>//span[contains(text(), 'Calculated Columns') ]</value>
       </entry>
    </selectorCollection>
    <selectorMethod>BASIC</selectorMethod>
@@ -25,16 +25,9 @@
    </webElementProperties>
    <webElementProperties>
       <isSelected>true</isSelected>
-      <matchCondition>contains</matchCondition>
-      <name>class</name>
-      <type>Main</type>
-      <value>header-title</value>
-   </webElementProperties>
-   <webElementProperties>
-      <isSelected>true</isSelected>
-      <matchCondition>contains</matchCondition>
+      <matchCondition>equals</matchCondition>
       <name>text</name>
       <type>Main</type>
-      <value>Calculated</value>
+      <value>Calculated Columns</value>
    </webElementProperties>
 </WebElementEntity>

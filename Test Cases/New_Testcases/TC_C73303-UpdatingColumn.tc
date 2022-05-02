@@ -40,4 +40,11 @@
       <masked>false</masked>
       <name>graphlocation</name>
    </variable>
+   <variable>
+      <defaultValue>'rgraph3'</defaultValue>
+      <description></description>
+      <id>d172f378-fb0d-4cb9-a682-6299d73c731a</id>
+      <masked>false</masked>
+      <name>runtimegraph</name>
+   </variable>
 </TestCaseEntity>

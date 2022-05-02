@@ -40,18 +40,20 @@ import org.openqa.selenium.chrome.ChromeDriver;
 import org.openqa.selenium.remote.RemoteWebDriver as RemoteWebDriver
 import com.kms.katalon.core.configuration.RunConfiguration as RunConfiguration
 import org.openqa.selenium.support.events.EventFiringWebDriver as EventFiringWebDriver
+import org.openqa.selenium.interactions.Actions;
+
 
 
 import internal.GlobalVariable
 
 public class Compare_Screenshots {
 	@Keyword
-	def  compare_graphs(idname,extentTest,graphlocation) {
-
+	def  compare_graphs(idname,extentTest,graphlocation,runtimegraph) {
 		WebDriver driver = DriverFactory.getWebDriver()
 
+
+
 		WebElement logo1= driver.findElement(By.id(idname));
-		//	Shutterbug.shootElement(driver,logo1).withName("graph1").save("D:\\copydata\\screenshots")
 		WebUI.delay(5)
 		def filePath = (RunConfiguration.getProjectDir() + '/BaseScreenshots/'+graphlocation +'.png')
 
@@ -61,17 +63,21 @@ public class Compare_Screenshots {
 		BufferedImage expectedimage= ImageIO.read(image);
 
 		WebElement logo= driver.findElement(By.id(idname));
-		//driver.findElement(By.ById)
 
-		//Shutterbug.shootElement(driver,logo).withName("graph2").save("D:\\copydata\\screenshots")
+		//Shutterbug.shootElement(driver,logo).withName("graph5").save("D:\\copydata\\screenshots")
 		WebUI.click(findTestObject('Object Repository/Visualization_part/Refresh_button'))
 		extentTest.log(LogStatus.PASS, 'Click on the Refresh button')
 		WebUI.delay(3)
 		extentTest.log(LogStatus.PASS, 'Take the screenshot of a particular webelement at the runtime and compare with the saved screenshot ')
 
-		boolean status=Shutterbug.shootElement(driver,logo).withName("graph").equals(expectedimage,0.1);
-		Shutterbug.shootElement(driver,logo).withName("graph").save((RunConfiguration.getProjectDir() )+ '/BaseScreenshots/')
-		String s=(RunConfiguration.getProjectDir() )+ '/BaseScreenshots/'+ "graph.png"
+
+		Shutterbug.shootElement(driver,logo).withName(runtimegraph).save((RunConfiguration.getProjectDir() )+ '/BaseScreenshots/'+'.png')
+
+
+
+		boolean status=Shutterbug.shootElement(driver,logo).withName(runtimegraph).equals(expectedimage,0.1);
+
+		String s=(RunConfiguration.getProjectDir() )+ '/BaseScreenshots/'+ runtimegraph+ ".png"
 		extentTest.log(LogStatus.PASS, extentTest.addScreenCapture(s))
 
 

@@ -54,7 +54,8 @@ public class inputgraph {
 		move.dragAndDropBy(slider3,0, -200).build().perform()
 
 
-		WebUI.delay(2)
-		WebUI.click(findTestObject('Object Repository/Rough_work/scrollable_content'))
+		WebUI.delay(4)
+
+		WebUI.click(findTestObject('expand_graph/scrollable_content'))
 	}
 }

@@ -47,12 +47,18 @@ WebUI.delay(2)
 CustomKeywords.'workbook.newworkbook.createworkbook'(workbookname,extentTest)
 
 //Create a DataTable and and select the text
-
+if(UserChoice == "KDB") {
+	CustomKeywords.'datatable.CreateTable_KDB.createdataTable'(extentTest, datatablevalue)
+	
+}
+else {
 CustomKeywords.'datatable.CreateTable_TimeBucket.createdatatable'(extentTest)
+}
 
 //create TimeBucket column
 //Create a New Ranking Column from the newcolumn option
 CustomKeywords.'datatable.NewColumn.Calculated_Column'(extentTest,columnname)
+
 
 extentTest.log(LogStatus.PASS, 'Select the Month Checkbox and Year Checkbox')
 WebUI.click(findTestObject('Object Repository/Month_Checkbox'))
@@ -64,8 +70,8 @@ WebUI.delay(2)
 WebUI.click(findTestObject('Object Repository/DataTable/Refresh_Preview'))
 
 //Verify the new updated column should appear in the Table
-TestObject newyearcolumn=WebUI.modifyObjectProperty(findTestObject('Object Repository/DataTable/Calculated_column'), "text", "contains", "02-03-2020 - Year", true)
-TestObject newmonthcolumn=WebUI.modifyObjectProperty(findTestObject('Object Repository/DataTable/Calculated_column'), "text", "contains", "02-03-2020 - Month", true)
+TestObject newyearcolumn=WebUI.modifyObjectProperty(findTestObject('Object Repository/DataTable/Calculated_column'), "text", "contains", "Year", true)
+TestObject newmonthcolumn=WebUI.modifyObjectProperty(findTestObject('Object Repository/DataTable/Calculated_column'), "text", "contains", "Month", true)
 
 boolean newyrcol=WebUI.verifyElementPresent(newyearcolumn,5, FailureHandling.CONTINUE_ON_FAILURE)
 boolean newmonthcol=WebUI.verifyElementPresent(newmonthcolumn,5, FailureHandling.CONTINUE_ON_FAILURE)
@@ -96,16 +102,35 @@ WebUI.click(findTestObject('Object Repository/Graph_Object'))
 //Drag the new updated column to the Y-axis of the Graph
 extentTest.log(LogStatus.PASS, 'Select the Bar-Graph from the Timeseries visualization')
 
-TestObject draggableobject = WebUI.modifyObjectProperty(findTestObject('Object Repository/General_Button'), 'text', 'equals', '02-03-2020 - Year', true)
-TestObject dropobject = WebUI.modifyObjectProperty(findTestObject('Object Repository/General_Button'), 'text', 'equals', 'Y', true)
+TestObject draggableobject = WebUI.modifyObjectProperty(findTestObject('Object Repository/General_Button'), 'text', 'contains', 'Year', true)
+TestObject dropobject = WebUI.modifyObjectProperty(findTestObject('Object Repository/General_Button'), 'text', 'equals', 'Color', true)
 
 WebUI.dragAndDropToObject(draggableobject, dropobject)
 
-TestObject draggableobject1 = WebUI.modifyObjectProperty(findTestObject('Object Repository/General_Button'), 'text', 'equals', '02-03-2020 - Month', true)
-TestObject dropobject1 = WebUI.modifyObjectProperty(findTestObject('Object Repository/General_Button'), 'text', 'equals', 'Breakdown', true)
+TestObject draggableobject1 = WebUI.modifyObjectProperty(findTestObject('Object Repository/General_Button'), 'text', 'contains', 'Month', true)
+TestObject dropobject1 = WebUI.modifyObjectProperty(findTestObject('Object Repository/General_Button'), 'text', 'equals', 'Color', true)
 
 WebUI.dragAndDropToObject(draggableobject1, dropobject1)
-extentTest.log(LogStatus.PASS, 'Drag and drop the Year Column to the Y axis and Month Column to the Breakdown')
+
+
+if(UserChoice == "KDB") {
+	WebUI.delay(2)
+
+TestObject draggableobject2 = WebUI.modifyObjectProperty(findTestObject('Object Repository/General_Button'), 'text', 'equals', 'sym', true)
+TestObject dropobject2 = WebUI.modifyObjectProperty(findTestObject('Object Repository/General_Button'), 'text', 'equals', 'Items', true)
+
+WebUI.dragAndDropToObject(draggableobject2, dropobject2)}
+else {
+	WebUI.delay(2)
+	TestObject draggableobject2 = WebUI.modifyObjectProperty(findTestObject('Object Repository/General_Button'), 'text', 'equals', 'a', true)
+	TestObject dropobject2 = WebUI.modifyObjectProperty(findTestObject('Object Repository/General_Button'), 'text', 'equals', 'Items', true)
+
+WebUI.dragAndDropToObject(draggableobject2, dropobject2)}
+
+
+
+
+extentTest.log(LogStatus.PASS, 'Drag and drop the Year amd Month Column to the Y axis and text Column to the Breakdown')
 //Click on the save button
 WebUI.delay(2)
 WebUI.click(findTestObject('Object Repository/DataTable/Save_Button'))
@@ -114,9 +139,18 @@ extentTest.log(LogStatus.PASS, 'Click on the save button')
 extentTest.log(LogStatus.PASS, 'Expand the sliders to view the full graph')
 CustomKeywords.'expandgraph.inputgraph.resizegraph'()
 
-CustomKeywords.'image_Comparision.Compare_Screenshots.compare_graphs'(graphid,extentTest,graphlocation)
+boolean result
+if(UserChoice != "KDB") 
+result=CustomKeywords.'image_Comparision.Compare_Screenshots.compare_graphs'(graphid,extentTest,graphlocation,runtimegraph)
+else
+result=	CustomKeywords.'image_Comparision.Compare_Screenshots.compare_graphs'(graphid,extentTest,graphlocationkdb,runtimegraphkdb)
 
 
+if (result) {
+	extentTest.log(LogStatus.PASS, ('Verified :: ' + TestCaseName) + ' :: Sucessfully')
+} else {
+	extentTest.log(LogStatus.FAIL, TestCaseName + ' :: failed')
+}
 }
 
 catch (StepErrorException e) {

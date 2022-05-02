@@ -6,12 +6,12 @@
    <elementGuidId>b937f1ae-25d2-47a1-bdbc-d84dad60defc</elementGuidId>
    <selectorCollection>
       <entry>
-         <key>BASIC</key>
-         <value>//span[(contains(text(), 'Transform settings') or contains(., 'Transform settings'))]</value>
-      </entry>
-      <entry>
          <key>XPATH</key>
          <value></value>
+      </entry>
+      <entry>
+         <key>BASIC</key>
+         <value>//span[(contains(text(), 'Transform settings') or contains(., 'Transform settings'))]</value>
       </entry>
    </selectorCollection>
    <selectorMethod>BASIC</selectorMethod>

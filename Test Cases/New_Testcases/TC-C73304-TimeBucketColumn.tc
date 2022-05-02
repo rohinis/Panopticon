@@ -40,4 +40,39 @@
       <masked>false</masked>
       <name>columnname</name>
    </variable>
+   <variable>
+      <defaultValue>''</defaultValue>
+      <description></description>
+      <id>ef87971d-e84b-478f-bd83-edff06f2a319</id>
+      <masked>false</masked>
+      <name>UserChoice</name>
+   </variable>
+   <variable>
+      <defaultValue>'StocksTimeSeries'</defaultValue>
+      <description></description>
+      <id>95c94175-1c3d-48dc-80be-e2689a93deb2</id>
+      <masked>false</masked>
+      <name>datatablevalue</name>
+   </variable>
+   <variable>
+      <defaultValue>'graph7'</defaultValue>
+      <description></description>
+      <id>af887984-08c1-4b85-8a02-751e4badcb29</id>
+      <masked>false</masked>
+      <name>graphlocationkdb</name>
+   </variable>
+   <variable>
+      <defaultValue>'rgraph4'</defaultValue>
+      <description></description>
+      <id>180288e2-e9d3-4236-b563-66511678f5d6</id>
+      <masked>false</masked>
+      <name>runtimegraph</name>
+   </variable>
+   <variable>
+      <defaultValue>'rgraph7'</defaultValue>
+      <description></description>
+      <id>314305ae-e071-4b1d-b3d7-8709cbe62858</id>
+      <masked>false</masked>
+      <name>runtimegraphkdb</name>
+   </variable>
 </TestCaseEntity>

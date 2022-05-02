@@ -47,4 +47,32 @@
       <masked>false</masked>
       <name>columnname</name>
    </variable>
+   <variable>
+      <defaultValue>''</defaultValue>
+      <description></description>
+      <id>938cf154-bfcb-4e8d-8d9e-35fa50cbe400</id>
+      <masked>false</masked>
+      <name>UserChoice</name>
+   </variable>
+   <variable>
+      <defaultValue>''</defaultValue>
+      <description></description>
+      <id>c3c5565a-af80-4ddb-9707-77ec99b40951</id>
+      <masked>false</masked>
+      <name>Expression</name>
+   </variable>
+   <variable>
+      <defaultValue>'rgraph1'</defaultValue>
+      <description></description>
+      <id>05aa508d-d6ca-4935-b6d3-6bc9a8e2ca8b</id>
+      <masked>false</masked>
+      <name>runtimegraph</name>
+   </variable>
+   <variable>
+      <defaultValue>'fgraph1'</defaultValue>
+      <description></description>
+      <id>35c15ef4-f4a1-4724-841b-e65475d249aa</id>
+      <masked>false</masked>
+      <name>firefoxgraph</name>
+   </variable>
 </TestCaseEntity>

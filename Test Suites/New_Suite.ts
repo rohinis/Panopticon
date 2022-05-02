@@ -21,9 +21,9 @@
          <id>1ad03cfd-b61e-4f03-b460-3e37b894b225</id>
          <iterationEntity>
             <iterationType>SPECIFIC</iterationType>
-            <value>1</value>
+            <value>1,6</value>
          </iterationEntity>
-         <testDataId>Data Files/New Test Data</testDataId>
+         <testDataId>Data Files/workbook_details</testDataId>
       </testDataLink>
       <variableLink>
          <testDataLinkId>1ad03cfd-b61e-4f03-b460-3e37b894b225</testDataLinkId>
@@ -50,9 +50,9 @@
          <variableId>f995c0a1-7afc-4078-aa02-a76418abff3b</variableId>
       </variableLink>
       <variableLink>
-         <testDataLinkId>1ad03cfd-b61e-4f03-b460-3e37b894b225</testDataLinkId>
-         <type>DATA_COLUMN</type>
-         <value>graphlocation</value>
+         <testDataLinkId></testDataLinkId>
+         <type>DEFAULT</type>
+         <value></value>
          <variableId>c38021b0-c4fe-4585-96cf-9d71a61ddcb5</variableId>
       </variableLink>
       <variableLink>
@@ -60,6 +60,81 @@
          <type>DATA_COLUMN</type>
          <value>columnname</value>
          <variableId>655f0bdc-76f5-4fc5-bfdb-355409bdb834</variableId>
+      </variableLink>
+      <variableLink>
+         <testDataLinkId>1ad03cfd-b61e-4f03-b460-3e37b894b225</testDataLinkId>
+         <type>DATA_COLUMN</type>
+         <value>UserChoice</value>
+         <variableId>938cf154-bfcb-4e8d-8d9e-35fa50cbe400</variableId>
+      </variableLink>
+      <variableLink>
+         <testDataLinkId>1ad03cfd-b61e-4f03-b460-3e37b894b225</testDataLinkId>
+         <type>DATA_COLUMN</type>
+         <value>Expression</value>
+         <variableId>c3c5565a-af80-4ddb-9707-77ec99b40951</variableId>
+      </variableLink>
+      <variableLink>
+         <testDataLinkId></testDataLinkId>
+         <type>DEFAULT</type>
+         <value></value>
+         <variableId>05aa508d-d6ca-4935-b6d3-6bc9a8e2ca8b</variableId>
+      </variableLink>
+      <variableLink>
+         <testDataLinkId></testDataLinkId>
+         <type>DEFAULT</type>
+         <value></value>
+         <variableId>35c15ef4-f4a1-4724-841b-e65475d249aa</variableId>
+      </variableLink>
+   </testCaseLink>
+   <testCaseLink>
+      <guid>7bf8cf58-a489-4437-a12b-35e114b480e5</guid>
+      <isReuseDriver>false</isReuseDriver>
+      <isRun>true</isRun>
+      <testCaseId>Test Cases/New_Testcases/TC_C73303-UpdatingColumn</testCaseId>
+      <testDataLink>
+         <combinationType>ONE</combinationType>
+         <id>bff5c226-6ca4-4306-a4a4-916e3a948665</id>
+         <iterationEntity>
+            <iterationType>SPECIFIC</iterationType>
+            <value>3</value>
+         </iterationEntity>
+         <testDataId>Data Files/workbook_details</testDataId>
+      </testDataLink>
+      <variableLink>
+         <testDataLinkId>bff5c226-6ca4-4306-a4a4-916e3a948665</testDataLinkId>
+         <type>DATA_COLUMN</type>
+         <value>workbookname</value>
+         <variableId>b62ea14a-16e7-4eff-a77f-c4dfd5c4cc2b</variableId>
+      </variableLink>
+      <variableLink>
+         <testDataLinkId>bff5c226-6ca4-4306-a4a4-916e3a948665</testDataLinkId>
+         <type>DATA_COLUMN</type>
+         <value>fileupload</value>
+         <variableId>c0d524fb-6ee3-42bd-9b0b-696c2c6777ea</variableId>
+      </variableLink>
+      <variableLink>
+         <testDataLinkId>bff5c226-6ca4-4306-a4a4-916e3a948665</testDataLinkId>
+         <type>DATA_COLUMN</type>
+         <value>graphid</value>
+         <variableId>daac14bf-5924-4b43-b3b5-52c96943637e</variableId>
+      </variableLink>
+      <variableLink>
+         <testDataLinkId>bff5c226-6ca4-4306-a4a4-916e3a948665</testDataLinkId>
+         <type>DATA_COLUMN</type>
+         <value>TestCaseName</value>
+         <variableId>6734763d-de60-4c7e-b333-e7d2d9e89fac</variableId>
+      </variableLink>
+      <variableLink>
+         <testDataLinkId></testDataLinkId>
+         <type>DEFAULT</type>
+         <value></value>
+         <variableId>c04900d8-037a-482d-872c-2a79c2de07a7</variableId>
+      </variableLink>
+      <variableLink>
+         <testDataLinkId></testDataLinkId>
+         <type>DEFAULT</type>
+         <value></value>
+         <variableId>d172f378-fb0d-4cb9-a682-6299d73c731a</variableId>
       </variableLink>
    </testCaseLink>
    <testCaseLink>
@@ -72,9 +147,9 @@
          <id>02cbcf4f-27ca-408c-ba4a-5eadb5b3b542</id>
          <iterationEntity>
             <iterationType>SPECIFIC</iterationType>
-            <value>2</value>
+            <value>2,7</value>
          </iterationEntity>
-         <testDataId>Data Files/New Test Data</testDataId>
+         <testDataId>Data Files/workbook_details</testDataId>
       </testDataLink>
       <variableLink>
          <testDataLinkId>02cbcf4f-27ca-408c-ba4a-5eadb5b3b542</testDataLinkId>
@@ -112,50 +187,35 @@
          <value>columnname</value>
          <variableId>3cbf019b-dec0-49c1-b2af-c4cc15410344</variableId>
       </variableLink>
-   </testCaseLink>
-   <testCaseLink>
-      <guid>7bf8cf58-a489-4437-a12b-35e114b480e5</guid>
-      <isReuseDriver>false</isReuseDriver>
-      <isRun>true</isRun>
-      <testCaseId>Test Cases/New_Testcases/TC_C73303-UpdatingColumn</testCaseId>
-      <testDataLink>
-         <combinationType>ONE</combinationType>
-         <id>bff5c226-6ca4-4306-a4a4-916e3a948665</id>
-         <iterationEntity>
-            <iterationType>SPECIFIC</iterationType>
-            <value>3</value>
-         </iterationEntity>
-         <testDataId>Data Files/New Test Data</testDataId>
-      </testDataLink>
       <variableLink>
-         <testDataLinkId>bff5c226-6ca4-4306-a4a4-916e3a948665</testDataLinkId>
+         <testDataLinkId>02cbcf4f-27ca-408c-ba4a-5eadb5b3b542</testDataLinkId>
          <type>DATA_COLUMN</type>
-         <value>workbookname</value>
-         <variableId>b62ea14a-16e7-4eff-a77f-c4dfd5c4cc2b</variableId>
-      </variableLink>
-      <variableLink>
-         <testDataLinkId>bff5c226-6ca4-4306-a4a4-916e3a948665</testDataLinkId>
-         <type>DATA_COLUMN</type>
-         <value>fileupload</value>
-         <variableId>c0d524fb-6ee3-42bd-9b0b-696c2c6777ea</variableId>
-      </variableLink>
-      <variableLink>
-         <testDataLinkId>bff5c226-6ca4-4306-a4a4-916e3a948665</testDataLinkId>
-         <type>DATA_COLUMN</type>
-         <value>graphid</value>
-         <variableId>daac14bf-5924-4b43-b3b5-52c96943637e</variableId>
-      </variableLink>
-      <variableLink>
-         <testDataLinkId>bff5c226-6ca4-4306-a4a4-916e3a948665</testDataLinkId>
-         <type>DATA_COLUMN</type>
-         <value>TestCaseName</value>
-         <variableId>6734763d-de60-4c7e-b333-e7d2d9e89fac</variableId>
+         <value>UserChoice</value>
+         <variableId>6295bd81-6311-434c-ba4f-e8d757760d4c</variableId>
       </variableLink>
       <variableLink>
          <testDataLinkId></testDataLinkId>
          <type>DEFAULT</type>
          <value></value>
-         <variableId>c04900d8-037a-482d-872c-2a79c2de07a7</variableId>
+         <variableId>9cb52d21-3c91-4a3a-8016-8a0c82f10c21</variableId>
+      </variableLink>
+      <variableLink>
+         <testDataLinkId></testDataLinkId>
+         <type>DEFAULT</type>
+         <value></value>
+         <variableId>6b73a41d-2526-429b-ac8e-a385889e4aff</variableId>
+      </variableLink>
+      <variableLink>
+         <testDataLinkId></testDataLinkId>
+         <type>DEFAULT</type>
+         <value></value>
+         <variableId>7c919eb4-c14a-44d2-a337-6d268c76502c</variableId>
+      </variableLink>
+      <variableLink>
+         <testDataLinkId></testDataLinkId>
+         <type>DEFAULT</type>
+         <value></value>
+         <variableId>60016c00-33c4-4b06-8e0d-9c4a233cbfa8</variableId>
       </variableLink>
    </testCaseLink>
    <testCaseLink>
@@ -168,9 +228,9 @@
          <id>9eda8e06-e9f1-462b-afcd-50ea06ec127c</id>
          <iterationEntity>
             <iterationType>SPECIFIC</iterationType>
-            <value>4</value>
+            <value>4,8</value>
          </iterationEntity>
-         <testDataId>Data Files/New Test Data</testDataId>
+         <testDataId>Data Files/workbook_details</testDataId>
       </testDataLink>
       <variableLink>
          <testDataLinkId>9eda8e06-e9f1-462b-afcd-50ea06ec127c</testDataLinkId>
@@ -201,6 +261,93 @@
          <type>DATA_COLUMN</type>
          <value>columnname</value>
          <variableId>e49d9acc-5ab1-47c9-9d13-fb48a187b45e</variableId>
+      </variableLink>
+      <variableLink>
+         <testDataLinkId>9eda8e06-e9f1-462b-afcd-50ea06ec127c</testDataLinkId>
+         <type>DATA_COLUMN</type>
+         <value>UserChoice</value>
+         <variableId>ef87971d-e84b-478f-bd83-edff06f2a319</variableId>
+      </variableLink>
+      <variableLink>
+         <testDataLinkId></testDataLinkId>
+         <type>DEFAULT</type>
+         <value></value>
+         <variableId>95c94175-1c3d-48dc-80be-e2689a93deb2</variableId>
+      </variableLink>
+      <variableLink>
+         <testDataLinkId></testDataLinkId>
+         <type>DEFAULT</type>
+         <value></value>
+         <variableId>af887984-08c1-4b85-8a02-751e4badcb29</variableId>
+      </variableLink>
+      <variableLink>
+         <testDataLinkId></testDataLinkId>
+         <type>DEFAULT</type>
+         <value></value>
+         <variableId>180288e2-e9d3-4236-b563-66511678f5d6</variableId>
+      </variableLink>
+      <variableLink>
+         <testDataLinkId></testDataLinkId>
+         <type>DEFAULT</type>
+         <value></value>
+         <variableId>314305ae-e071-4b1d-b3d7-8709cbe62858</variableId>
+      </variableLink>
+   </testCaseLink>
+   <testCaseLink>
+      <guid>d90773a9-e064-4f3a-99bc-6f8a82bde6b9</guid>
+      <isReuseDriver>false</isReuseDriver>
+      <isRun>false</isRun>
+      <testCaseId>Test Cases/New_Testcases/TC-73305-KDBConnector</testCaseId>
+      <testDataLink>
+         <combinationType>ONE</combinationType>
+         <id>6483de45-8d92-48aa-a2b2-583896e4c198</id>
+         <iterationEntity>
+            <iterationType>SPECIFIC</iterationType>
+            <value>5</value>
+         </iterationEntity>
+         <testDataId>Data Files/workbook_details</testDataId>
+      </testDataLink>
+      <variableLink>
+         <testDataLinkId>6483de45-8d92-48aa-a2b2-583896e4c198</testDataLinkId>
+         <type>DATA_COLUMN</type>
+         <value>TestCaseName</value>
+         <variableId>211730b0-b0e2-4db3-882c-b1350ed570f5</variableId>
+      </variableLink>
+      <variableLink>
+         <testDataLinkId>6483de45-8d92-48aa-a2b2-583896e4c198</testDataLinkId>
+         <type>DATA_COLUMN</type>
+         <value>workbookname</value>
+         <variableId>a4620554-5e78-438b-90bd-3c6cef84ab09</variableId>
+      </variableLink>
+      <variableLink>
+         <testDataLinkId>6483de45-8d92-48aa-a2b2-583896e4c198</testDataLinkId>
+         <type>DATA_COLUMN</type>
+         <value>fileupload</value>
+         <variableId>7c0ff5b6-1f5a-444e-8f25-76285d743d21</variableId>
+      </variableLink>
+      <variableLink>
+         <testDataLinkId>6483de45-8d92-48aa-a2b2-583896e4c198</testDataLinkId>
+         <type>DATA_COLUMN</type>
+         <value>graphid</value>
+         <variableId>321593d6-043a-428e-bc36-479fa593305a</variableId>
+      </variableLink>
+      <variableLink>
+         <testDataLinkId>6483de45-8d92-48aa-a2b2-583896e4c198</testDataLinkId>
+         <type>DATA_COLUMN</type>
+         <value>graphlocation</value>
+         <variableId>5a2600c5-fe01-47a6-b0e0-f0b912db5280</variableId>
+      </variableLink>
+      <variableLink>
+         <testDataLinkId>6483de45-8d92-48aa-a2b2-583896e4c198</testDataLinkId>
+         <type>DATA_COLUMN</type>
+         <value>columnname</value>
+         <variableId>35d12dc2-e3b8-41ae-ad6f-b4e5a57cf4f8</variableId>
+      </variableLink>
+      <variableLink>
+         <testDataLinkId></testDataLinkId>
+         <type>DEFAULT</type>
+         <value></value>
+         <variableId>6cf7e042-293d-428d-981e-1e9b93a6e01e</variableId>
       </variableLink>
    </testCaseLink>
 </TestSuiteEntity>

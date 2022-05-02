@@ -45,7 +45,7 @@ public class CreateTable {
 		extentTest.log(LogStatus.PASS, 'Upload the File')
 
 		//fetch sheets and refresh preview
-		WebUI.delay(3)
+		WebUI.delay(2)
 		WebUI.click(findTestObject('Object Repository/DataTable/Fetch_Sheets'))
 		WebUI.delay(3)
 		WebUI.click(findTestObject('Object Repository/DataTable/Refresh_Preview'))
@@ -56,16 +56,17 @@ public class CreateTable {
 		WebUI.click(findTestObject('Object Repository/DataTable/Save_Button'))
 		extentTest.log(LogStatus.PASS, 'Click on the Save button')
 
-		WebUI.delay(5)
+		WebUI.delay(3)
 		WebUI.click(findTestObject('Object Repository/DataTable/Back_Button'))
 
 		//Step 3:Click on edit datatable icon
 		WebUI.click(findTestObject('Object Repository/Editable_datatable_Icon'))
 		extentTest.log(LogStatus.PASS, 'Click on edit datatable icon')
 
-		WebUI.delay(3)
+		WebUI.delay(2)
 		WebUI.click(findTestObject('Object Repository/DataTable/Fetch_Sheets'))
 		WebUI.delay(3)
 		WebUI.click(findTestObject('Object Repository/DataTable/Refresh_Preview'))
+
 	}
 }
