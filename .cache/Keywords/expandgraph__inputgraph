@@ -1,0 +1,16 @@
+{
+  "keywordFileContentHash": "1FBB25487AEEEBF7C2867A15D13772F8",
+  "keywordClasses": [
+    {
+      "name": "expandgraph.inputgraph",
+      "keywordMethods": [
+        {
+          "name": "resizegraph",
+          "parameters": [],
+          "javadoc": ""
+        }
+      ]
+    }
+  ],
+  "javadocParsed": true
+}

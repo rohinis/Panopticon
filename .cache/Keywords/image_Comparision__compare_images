@@ -1,0 +1,33 @@
+{
+  "keywordFileContentHash": "CD1312623B929F784B15533C2667BC3C",
+  "keywordClasses": [
+    {
+      "name": "image_Comparision.compare_images",
+      "keywordMethods": [
+        {
+          "name": "compareImages",
+          "parameters": []
+        },
+        {
+          "name": "take_screenshot",
+          "parameters": [
+            {
+              "name": "object1",
+              "initialExpression": "",
+              "type": {
+                "fullClassName": "com.kms.katalon.core.testobject.TestObject",
+                "unresolvedClassName": "TestObject",
+                "isArray": false,
+                "isGnericsPlaceHolder": false,
+                "hasImmutableClassName": false,
+                "genericsTypes": [],
+                "errorOnParsing": false
+              }
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "javadocParsed": false
+}

@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TestCaseEntity>
+   <description></description>
+   <name>TC_C73303-UpdatingColumn</name>
+   <tag></tag>
+   <comment></comment>
+   <testCaseGuid>844ad911-3913-4a6b-9f1a-a91cef0409b3</testCaseGuid>
+   <variable>
+      <defaultValue>''</defaultValue>
+      <description></description>
+      <id>b62ea14a-16e7-4eff-a77f-c4dfd5c4cc2b</id>
+      <masked>false</masked>
+      <name>workbookname</name>
+   </variable>
+   <variable>
+      <defaultValue>''</defaultValue>
+      <description></description>
+      <id>c0d524fb-6ee3-42bd-9b0b-696c2c6777ea</id>
+      <masked>false</masked>
+      <name>fileupload</name>
+   </variable>
+   <variable>
+      <defaultValue>''</defaultValue>
+      <description></description>
+      <id>daac14bf-5924-4b43-b3b5-52c96943637e</id>
+      <masked>false</masked>
+      <name>graphid</name>
+   </variable>
+   <variable>
+      <defaultValue>''</defaultValue>
+      <description></description>
+      <id>6734763d-de60-4c7e-b333-e7d2d9e89fac</id>
+      <masked>false</masked>
+      <name>TestCaseName</name>
+   </variable>
+   <variable>
+      <defaultValue>'graph3'</defaultValue>
+      <description></description>
+      <id>c04900d8-037a-482d-872c-2a79c2de07a7</id>
+      <masked>false</masked>
+      <name>graphlocation</name>
+   </variable>
+</TestCaseEntity>

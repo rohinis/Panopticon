@@ -1,0 +1,30 @@
+{
+  "keywordFileContentHash": "8A1A6B4F869F8C8940C3A8FF923D8A6D",
+  "keywordClasses": [
+    {
+      "name": "image_Comparision.screenshotHelper",
+      "keywordMethods": [
+        {
+          "name": "takescreenshotelement1",
+          "parameters": [
+            {
+              "name": "object",
+              "initialExpression": "",
+              "type": {
+                "fullClassName": "com.kms.katalon.core.testobject.TestObject",
+                "unresolvedClassName": "TestObject",
+                "isArray": false,
+                "isGnericsPlaceHolder": false,
+                "hasImmutableClassName": false,
+                "genericsTypes": [],
+                "errorOnParsing": false
+              }
+            }
+          ],
+          "javadoc": ""
+        }
+      ]
+    }
+  ],
+  "javadocParsed": true
+}

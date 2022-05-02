@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TestCaseEntity>
+   <description></description>
+   <name>TC-C73304-TimeBucketColumn</name>
+   <tag></tag>
+   <comment></comment>
+   <testCaseGuid>696db00a-95d4-4ccc-838b-9fea99c4e2c5</testCaseGuid>
+   <variable>
+      <defaultValue>''</defaultValue>
+      <description></description>
+      <id>3687d1da-d6ab-4f0a-93b7-7f25ea41d07b</id>
+      <masked>false</masked>
+      <name>workbookname</name>
+   </variable>
+   <variable>
+      <defaultValue>''</defaultValue>
+      <description></description>
+      <id>703720a0-63c1-428f-86d1-a6cdc5551f9d</id>
+      <masked>false</masked>
+      <name>graphid</name>
+   </variable>
+   <variable>
+      <defaultValue>''</defaultValue>
+      <description></description>
+      <id>00ae2c37-ea9c-419e-afdc-823a0f0c6420</id>
+      <masked>false</masked>
+      <name>TestCaseName</name>
+   </variable>
+   <variable>
+      <defaultValue>'graph4'</defaultValue>
+      <description></description>
+      <id>1a2b9fb1-1901-4565-8d79-7c776cdccc1e</id>
+      <masked>false</masked>
+      <name>graphlocation</name>
+   </variable>
+   <variable>
+      <defaultValue>''</defaultValue>
+      <description></description>
+      <id>e49d9acc-5ab1-47c9-9d13-fb48a187b45e</id>
+      <masked>false</masked>
+      <name>columnname</name>
+   </variable>
+</TestCaseEntity>

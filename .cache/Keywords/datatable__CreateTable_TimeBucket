@@ -1,0 +1,30 @@
+{
+  "keywordFileContentHash": "252FDEC7ECDE0DB7850F838CA07FB1F9",
+  "keywordClasses": [
+    {
+      "name": "datatable.CreateTable_TimeBucket",
+      "keywordMethods": [
+        {
+          "name": "createdatatable",
+          "parameters": [
+            {
+              "name": "extentTest",
+              "initialExpression": "",
+              "type": {
+                "fullClassName": "java.lang.Object",
+                "unresolvedClassName": "java.lang.Object",
+                "isArray": false,
+                "isGnericsPlaceHolder": false,
+                "hasImmutableClassName": true,
+                "genericsTypes": [],
+                "errorOnParsing": false
+              }
+            }
+          ],
+          "javadoc": ""
+        }
+      ]
+    }
+  ],
+  "javadocParsed": true
+}
